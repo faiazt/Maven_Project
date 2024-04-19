@@ -5,6 +5,8 @@ pipeline {
             steps {
                 sh '''
                 echo building the maven application
+                pwd
+                mvn -version
                 mvn clean install
                 '''
             }
