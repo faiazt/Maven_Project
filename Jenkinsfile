@@ -6,8 +6,8 @@ pipeline {
                 sh '''
                 echo building the maven application
                 pwd
-                mvn -version
-                mvn clean install
+                sudo mvn -version
+                sudo mvn clean install
                 '''
             }
         }
